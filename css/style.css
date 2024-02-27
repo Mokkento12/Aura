@@ -19,19 +19,19 @@
 
 * {
   font-family: 'Muller', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 .header {
   min-width: 100%;
   position: fixed;
   top: 0;
-  z-index: 99;
+  z-index: 1050;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -85,8 +85,7 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  height: 100%;
-  /* height: 680px; */
+  max-height: 680px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,4 +131,239 @@ body {
 .author__btn {
   color: rgb(255, 255, 255);
   border: 5px solid rgb(87, 210, 114);
+}
+
+.hero__image {
+  margin-bottom: -10px;
+}
+
+.auction {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  z-index: 99;
+  padding: 90px 0;
+}
+
+.auction__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.auction__container-live {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+}
+
+.auction__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.auction__title {
+  color: rgb(7, 6, 11);
+  font-family: 'Russo One';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+  margin-right: 16px;
+}
+
+.live {
+  position: relative;
+  border: 2px solid rgb(209, 49, 48);
+  border-radius: 40px;
+  padding: 10px 15px 10px 26px;
+}
+
+.live__action {
+  color: rgb(209, 49, 48);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.live__action::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: rgb(209, 49, 48);
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.desc__img {
+  width: 460px;
+  height: 460px;
+  margin-right: 32px;
+}
+
+.auction__desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desc__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nickname {
+  display: flex;
+  align-items: center;
+  max-width: 228px;
+  padding: 11px 16px;
+  border-radius: 23px;
+  background: rgb(237, 237, 242);
+  margin-bottom: 32px;
+}
+
+.nickname__avatar {
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.nickname__text {
+  color: rgb(7, 6, 11);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.auction__name {
+  color: rgb(7, 6, 11);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.bet {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  border-radius: 40px;
+  background: rgb(237, 237, 242);
+  padding: 32px 57px 32px 32px;
+  margin-right: 32px;
+}
+
+.bet__title {
+  color: rgb(7, 6, 11);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.bet__rate {
+  color: rgb(7, 6, 11);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.bet__price {
+  color: rgb(149, 149, 157);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.count {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background: rgb(7, 6, 11);
+  padding: 27px 32px;
+}
+
+.count__title {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clock__img {
+  width: 121px;
+  height: 121px;
+  margin-left: 18px;
+}
+
+.timer__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 26px;
+}
+
+.timer__value {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.timer__desc {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.bet__btn {
+  max-width: 296px;
+  border-radius: 40px;
+  background: rgb(70, 244, 219);
+  padding: 25px 0;
+  color: rgb(7, 6, 11);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
 }
