@@ -84,6 +84,7 @@ body {
 
 .hero {
   position: relative;
+  margin-top: 30px;
   width: 100%;
   max-height: 680px;
   display: flex;
@@ -150,14 +151,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  flex-direction: column;
 }
 
 .auction__container-live {
   display: flex;
   flex-direction: column;
   max-width: 1280px;
+  margin-bottom: 90px;
 }
 
 .auction__header {
@@ -366,4 +367,128 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
+}
+
+.other__auctions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.other__auction-header {
+  margin-bottom: 32px;
+}
+
+.other__auction-title {
+  color: rgb(7, 6, 11);
+  font-family: 'Russo One';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.items__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.auction__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  background: rgb(7, 6, 11);
+}
+
+.item__top {
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+  background: rgb(237, 237, 242);
+}
+
+.item__img {
+  width: 160px;
+  height: 160px;
+  padding: 7px 68px;
+}
+
+.item__bottom {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: auto;
+  padding: 16px 16px 32px 16px;
+}
+
+.item__nickname {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.item__avatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.item__text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+
+.item__name {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.item__rate {
+  color: rgb(70, 244, 219);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.item__timer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item__timer-value,
+.item__timer-desc {
+  color: rgb(149, 149, 157);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.other__auction-button {
+  border: 5px solid rgb(70, 244, 219);
+  border-radius: 40px;
+  color: rgb(7, 6, 11);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  padding: 25px 54px;
 }
