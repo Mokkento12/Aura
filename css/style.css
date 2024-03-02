@@ -483,6 +483,7 @@ body {
 }
 
 .other__auction-button {
+  width: 296px;
   border: 5px solid rgb(70, 244, 219);
   border-radius: 40px;
   color: rgb(7, 6, 11);
