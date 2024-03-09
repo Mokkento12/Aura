@@ -440,7 +440,7 @@ body {
   border-radius: 50%;
 }
 
-.item__text {
+.item__nickname-text {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 700;
@@ -493,3 +493,84 @@ body {
   text-align: center;
   padding: 25px 54px;
 }
+
+.new__stickers-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(7, 6, 11);
+}
+
+.new__stickers-slider {
+  max-width: 1920px;
+  padding: 90px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.new__stickers-title {
+  color: rgb(255, 255, 255);
+  font-family: 'Russo One';
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.new__stickers-title--img {
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+.new__stickers-slider--container {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.new__stickers-slide {
+  margin-bottom: 64px;
+}
+
+.image-wrapper {
+  display: flex;
+}
+
+.new__stickers-slide--image {
+  margin-right: 28px;
+}
+
+.tabs {
+  width: 284px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab {
+  width: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  border: 2px solid rgb(209, 49, 48);
+  border-radius: 40px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.active {
+  background: rgb(209, 49, 48);
+}
+
+.new__stickers-form {}
