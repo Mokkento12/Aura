@@ -25,6 +25,7 @@
 
 body {
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 .header {
@@ -89,6 +90,7 @@ body {
   max-height: 680px;
   display: flex;
   align-items: center;
+  gap: 35px;
   justify-content: center;
   background-color: rgb(7, 6, 11);
 }
@@ -106,6 +108,7 @@ body {
   font-weight: 400;
   line-height: 84px;
   text-align: left;
+  margin-bottom: 36px;
 }
 
 .hero__group-btns {
@@ -132,6 +135,10 @@ body {
 .author__btn {
   color: rgb(255, 255, 255);
   border: 5px solid rgb(87, 210, 114);
+}
+
+.hero__img {
+  overflow: hidden;
 }
 
 .hero__image {
@@ -1014,4 +1021,22 @@ body {
   font-weight: 400;
   line-height: 12px;
   padding: 8px 0;
+}
+
+
+@media (max-width: 1024px) {
+
+  .header {
+    min-width: auto;
+    width: 952px;
+    padding: 20px 36px;
+  }
+
+  .hero__group {
+    padding-left: 36px;
+  }
+
+  .hero__img {
+    max-width: 332px;
+  }
 }
