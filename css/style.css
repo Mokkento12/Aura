@@ -1039,4 +1039,29 @@ body {
   .hero__img {
     max-width: 332px;
   }
+
+  .auction__container {
+    max-width: 952px;
+    padding: 0 36px;
+  }
+
+  .auction__container-live {
+    width: 100%;
+  }
+
+
+  .auction__desc {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .rate {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .bet {
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
 }
