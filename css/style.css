@@ -397,12 +397,16 @@ body {
   text-align: left;
 }
 
-.items__container {
+.auctions__grid {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1280px;
+  flex-direction: column;
+}
+
+.items__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 32px;
   margin-bottom: 32px;
 }
@@ -1064,4 +1068,13 @@ body {
     margin-bottom: 32px;
     margin-right: 0;
   }
+
+  .items__container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .auction__item:nth-child(n+7) {
+    display: none;
+  }
+
 }
