@@ -1087,4 +1087,17 @@ body {
     margin-right: 21px;
   }
 
+
+  .new__stickers-form {
+    padding: 0 36px;
+  }
+
+  .new__stickers-bg {
+    width: 460px;
+    height: 391px;
+  }
+
+  .new__stickers-bg--image {
+    width: 100%;
+  }
 }
