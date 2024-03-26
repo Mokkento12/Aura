@@ -1077,4 +1077,14 @@ body {
     display: none;
   }
 
+  .new__stickers-slider {
+    padding: 90px 36px;
+  }
+
+  .new__stickers-slide--image {
+    width: 100%;
+    max-height: 223px;
+    margin-right: 21px;
+  }
+
 }
